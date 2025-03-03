@@ -103,43 +103,6 @@ body {
     padding: 10px;
 }
 
-/* Mobile Navigation */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    /* Mobile menu expands downward */
-    .mobile-menu {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        top: 60px;
-        width: 100%;
-        left: 0;
-        background: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.5s ease-in-out;
-        z-index: 999;
-    }
-
-    .mobile-menu.open {
-        max-height: 300px; /* Adjust as needed */
-    }
-
-    .mobile-menu a {
-        padding: 10px;
-        text-align: center;
-        display: block;
-    }
-}
-
 /* Hero Section */
 .first-hero {
     background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -221,4 +184,66 @@ ul li {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Navigation */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Mobile menu expands downward */
+    .mobile-menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        z-index: 999;
+    }
+
+    .mobile-menu.open {
+        max-height: 300px; /* Adjust as needed */
+    }
+
+    .mobile-menu a {
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Small mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-left-logo {
+        font-size: 10px;
+    }
+
+    .first-hero h1 {
+        font-size: 40px;
+        width: auto;
+    }
+}
+
+/* Large mobile */
+@media (min-width: 481px) and (max-width: 767px) {
+    .first-hero h1 {
+        font-size: 50px;
+        width: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
 }
