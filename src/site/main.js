@@ -5,10 +5,10 @@ const Main = () => {
 
     return (
         <div className="container">
-            <nav className="nav">
+            <nav className={`nav ${menuOpen ? "expanded" : ""}`}>
                 <div className="nav-left">
                     <a href="#" className="nav-link nav-left-logo">FUNDamentals</a>
-                    <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+                    <div className="nav-links">
                         <a href="#" className="nav-link nav-left-link">Demos</a>
                         <a href="#" className="nav-link nav-left-link">Blog</a>
                         <a href="#" className="nav-link nav-left-link">Support</a>

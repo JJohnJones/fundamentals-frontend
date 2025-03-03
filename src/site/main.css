@@ -1,21 +1,23 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
-    box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', 'Arial', sans-serif;
     background-color: #f9f9f9;
-    overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navigation */
@@ -26,12 +28,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Prevents overflow on smaller screens */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow for floating effect */
+    border-radius: 10px; /* Rounded corners */
+    position: sticky;
+    top: 15px; /* Detach from the top */
+    margin: 0 auto; /* Center it */
+    max-width: 95%; /* Ensure it doesn’t touch screen edges */
 }
 
-.nav-left, .nav-right {
+
+.nav-left {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -41,7 +48,12 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Allows links to move to a new row if needed */
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .nav-link {
@@ -49,7 +61,6 @@ body {
     color: #333;
     font-size: 16px;
     font-weight: 500;
-    white-space: nowrap; /* Prevents breaking of links */
 }
 
 .nav-left-logo {
@@ -79,7 +90,7 @@ body {
     padding: 10px;
 }
 
-/* Responsive Navigation */
+/* Mobile Navigation */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -112,34 +123,38 @@ body {
 /* Hero Sections */
 .first-hero {
     background: linear-gradient(to right, #4facfe, #00f2fe);
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    width: 100%;
+    margin-top: -70px;
+    padding: 100px 0 50px 0;
 }
 
 .first-hero h1 {
-    font-size: 36px;
+    font-size: 60px;
     font-weight: bold;
+    padding: 20px;
+    width: 70%;
 }
+
 
 .first-hero p {
-    font-size: 18px;
+    font-size: 26px;
     max-width: 600px;
-    padding: 0 10px;
 }
 
-/* CTA Button */
 .cta-button {
     margin-top: 15px;
     padding: 12px 24px;
     font-size: 18px;
+    font-weight: bold;
     color: white;
-    background-color: #28a745;
+    background-color: #000000;
+    border: 2px solid white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -154,8 +169,6 @@ body {
     padding: 60px 20px;
     background-color: white;
     text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
     border-radius: 8px;
 }
 
@@ -181,8 +194,6 @@ ul li {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows the footer to adjust to screen width */
-    width: 100%;
 }
 
 .footer a {
