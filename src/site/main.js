@@ -16,12 +16,14 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="nav-right">
-                    <a href="#" className="nav-link nav-right-link">Login</a>
+                    <a href="#" className="nav-link nav-right-link">Teacher Login</a>
                     <a href="#" className="nav-link nav-right-link sign-up">Sign up</a>
                     <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         ☰
                     </button>
                     <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+                        <button className="sign-up">Sign Up</button>
+                        <button className="log-in">Teacher Login</button>
                         <a href="#" className="nav-link">Demos</a>
                         <a href="#" className="nav-link">Blog</a>
                         <a href="#" className="nav-link">Support</a>
@@ -29,10 +31,15 @@ const Main = () => {
                     </div>
                 </div>
             </nav>
-            <section className="first-hero">
-                <h1>Engage Your Students with Financial Literacy Games</h1>
-                <p>Gamify financial education with interactive, browser-based lessons designed for classrooms.</p>
-                <button className="cta-button">Get Started</button>
+            <section className="first-hero-container">
+                <div className="first-hero-content">
+                    <h1>Finance Made Fun</h1>
+                    <p>Gamify financial education with interactive, browser-based lessons designed for classrooms.</p>
+                    <div className="hero-buttons">
+                        <button className="view-demo">View Demo</button>
+                        <button className="sign-up">Sign Up</button>
+                    </div>
+                </div>
             </section>
             <section className="second-hero">
                 <h2>How It Works</h2>
