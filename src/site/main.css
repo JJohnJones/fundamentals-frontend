@@ -29,7 +29,7 @@ body {
     transform: translateX(-50%);
     width: 100%;
     max-width: 2000px;
-    z-index: 1000;
+    z-index: 99;
 }
 
 .mobile-menu {
@@ -224,7 +224,7 @@ ul li {
 }
 
 /* Mobile Navigation */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .hamburger {
         display: block;
     }
@@ -245,7 +245,7 @@ ul li {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.3s ease-in-out;
         z-index: 999;
     }
 
@@ -259,6 +259,10 @@ ul li {
         text-align: left;
         display: block;
     }
+
+    .mobile-menu button {
+        display: none;
+    }
 }
 
 /* Small mobile */
@@ -267,6 +271,7 @@ ul li {
         display: none;
         max-height: 100vh;
         transition: none;
+        padding-top: 20px;
     }
 
     .mobile-menu.open {
@@ -280,11 +285,13 @@ ul li {
     .mobile-menu a {
         font-size: 16px;
         padding: 20px;
+        margin-top: 20px;
         text-align: left;
         display: block;
     }
 
     .mobile-menu button {
+        display: block;
         padding: 10px;
         margin: 15px 15px 0 15px;
     }

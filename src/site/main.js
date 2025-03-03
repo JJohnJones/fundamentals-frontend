@@ -47,11 +47,18 @@ const Main = () => {
             </section>
             <section className="why-us">
                 <h2>Why Choose FUNDamentals?</h2>
-                <ul>
-                    <li>Engaging, interactive lessons</li>
-                    <li>Built-in progress tracking</li>
-                    <li>Designed for educators and students</li>
-                </ul>
+                <div className="why-us-card">
+                    <h3>Engaging, Interactive Lessons</h3>
+                    <p>Students learn financial skills through immersive gameplay.</p>
+                </div>
+                <div className="why-us-card">
+                    <h3>Built-in Progress Tracking</h3>
+                    <p>Monitor student performance with real-time analytics.</p>
+                </div>
+                <div className="why-us-card">
+                    <h3>Designed for Educators and Students</h3>
+                    <p>Easy-to-use tools tailored for classroom learning.</p>
+                </div>
             </section>
             <section className="faq">
                 <h2>Frequently Asked Questions</h2>
