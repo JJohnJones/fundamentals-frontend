@@ -21,6 +21,12 @@ const Main = () => {
                     <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         ☰
                     </button>
+                    <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+                        <a href="#" className="nav-link">Demos</a>
+                        <a href="#" className="nav-link">Blog</a>
+                        <a href="#" className="nav-link">Support</a>
+                        <a href="#" className="nav-link">Pricing</a>
+                    </div>
                 </div>
             </nav>
             <section className="first-hero">
