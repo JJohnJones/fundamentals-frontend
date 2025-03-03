@@ -1,6 +1,7 @@
 {
   "name": "fundamentals-frontend",
   "version": "0.1.0",
+  "homepage": "https://jjohnjones.github.io/fundamentals-frontend",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
