@@ -1,6 +1,15 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/**** Global Variables ****/
+:root {
+    --primary-color: #1A936F;
+    --secondary-color: #DBF4AD;
+    --background-color: #F0F4EF;
+    --text-color: #0D1821;
+    --accent-color: #B4CDED;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -79,18 +88,18 @@ body {
 .nav-left-logo {
     font-size: 22px;
     font-weight: bold;
-    color: #007bff;
+    color: #1A936F;
 }
 
 .sign-up {
-    background-color: #007bff;
-    color: white;
+    background: #0D1821;
+    color: #F0F4EF;
     padding: 8px 16px;
     border-radius: 5px;
 }
 
 .sign-up:hover {
-    background-color: #0056b3;
+    background-color: #DBF4AD;
 }
 
 /* Hamburger Menu */
@@ -176,16 +185,21 @@ body {
 }
 
 .sign-up:hover {
-    background-color: #00aeff;
+    background-color: #DBF4AD;
+    color: black;
     transition: 0.1s ease-in-out;
 }
 
-/* Sections */
+/* -----------------------------------Sections----------------------------------- */
+
+/* All */
 .second-hero, .why-us, .faq, .about, .contact, .surveys, .blog {
     padding: 60px 20px;
-    background-color: white;
+    background-color: var(--background-color);
     text-align: center;
     border-radius: 8px;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -203,9 +217,66 @@ ul li {
     margin: 8px 0;
 }
 
+/* Second Hero */
+
+
+/* Why Us */
+.why-us {
+    background: linear-gradient(to right, #1A936F, #DBF4AD);
+}
+
+.why-us-card {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    height: auto;
+}
+
+.why-us-card h6 {
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.why-us-card.left {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.why-us-card.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.why-us-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+}
+
+/* FAQs */
+
+
+/* About */
+
+
+/* Contact */
+
+
+/* Surveys */
+
+
+/* Blog */
+
+
 /* Footer */
 .footer {
-    background-color: #222;
+    background-color: var(--text-color);
     color: white;
     padding: 20px;
     display: flex;
@@ -222,6 +293,8 @@ ul li {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* -----------------------------------Media Queries----------------------------------- */
 
 /* Mobile Navigation */
 @media (max-width: 900px) {
