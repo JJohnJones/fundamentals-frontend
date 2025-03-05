@@ -49,17 +49,17 @@ const Main = () => {
                 <h2>Why Choose FUNDamentals?</h2>
                 <div className="why-us-card left">
                     <h3>Engaging, Interactive Lessons</h3>
-                    <h6>Students learn financial skills through immersive gameplay.</h6>
+                    <p>Students learn financial skills through immersive gameplay.</p>
                     <p>Content here</p>
                 </div>
                 <div className="why-us-card right">
                     <h3>Built-in Progress Tracking</h3>
-                    <h6>Monitor student performance with real-time analytics.</h6>
+                    <p>Monitor student performance with real-time analytics.</p>
                     <p>Content here</p>
                 </div>
                 <div className="why-us-card left">
                     <h3>Designed for Educators and Students</h3>
-                    <h6>Easy-to-use tools tailored for classroom learning.</h6>
+                    <p>Easy-to-use tools tailored for classroom learning.</p>
                     <p>Content here</p>
                 </div>
             </section>
@@ -68,8 +68,31 @@ const Main = () => {
                 <p>How can I integrate this platform into my curriculum?</p>
             </section>
             <section className="about">
-                <h2>About Us</h2>
-                <p>We believe in making financial literacy fun and accessible for students everywhere.</p>
+                <div className="about-us">
+                    <h2>About Us</h2>
+                    <p>At FUNDamentals, we believe that financial literacy is the foundation for lifelong success. 
+                       Our gamified educational platform transforms traditional financial education into an interactive 
+                       and engaging experience, equipping both teachers and students with the tools they need to navigate 
+                       real-world financial decisions. By integrating experiential simulations with a modular learning approach, 
+                       we bridge the gap between knowledge and application, making financial literacy accessible and impactful. 
+                       Designed with educators in mind, FUNDamentals is easy to implement, seamlessly integrates into classrooms, 
+                       and enhances learning outcomes. With a mission to empower the next generation with financial confidence, 
+                       we are redefining how financial education is taught—one interactive lesson at a time.
+                    </p>
+                </div>
+                <div className="our-story">
+                    <h2>Our Story</h2>
+                    <p>FUNDamentals was born out of a shared passion for financial literacy and a recognition of the 
+                       challenges faced by both students and teachers. Our founding team met through Ohio State’s 
+                       LaunchPad, where we bonded over our personal struggles with financial education and the lack 
+                       of engaging learning resources. Motivated by these shared experiences, we set out to create 
+                       a solution that would make financial literacy both accessible and effective. Our journey gained 
+                       momentum when we won the Best of Student Startups (BOSS) competition through the Keenan Center 
+                       for Entrepreneurship, validating our vision. Now part of Boost Camp PBA, we are scaling our 
+                       impact, refining our platform, and working closely with educators to ensure that every student 
+                       has the knowledge and confidence to manage their financial future.
+                    </p>
+                </div>
             </section>
             <section className="contact">
                 <h2>Contact Us</h2>
