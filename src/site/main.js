@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { useInView } from 'react-intersection-observer';
 
 const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [ref1, inView1] = useInView({ threshold: 1, triggerOnce: true });
+    const [ref2, inView2] = useInView({ threshold: 1, triggerOnce: true });
+    const [ref3, inView3] = useInView({ threshold: 1, triggerOnce: true });
+    const [ref4, inView4] = useInView({ threshold: 1, triggerOnce: true });
 
     return (
-        <div className="container fadeIn">
+        <div className="container">
             <div className="nav-container">
                 <nav className={`nav ${menuOpen ? "expanded" : ""}`}>
                     <div className="nav-left">
@@ -35,7 +40,7 @@ const Main = () => {
             </div>
             
             <section className="first-hero-container">
-                <div className="first-hero-content">
+                <div ref={ref1} className={`first-hero-content ${inView1 ? 'floatUp visible' : ''}`}>
                     <h1>Finance Made Fun</h1>
                     <p>Gamify financial education with interactive, browser-based lessons designed for classrooms.</p>
                     <div className="hero-buttons">
@@ -50,17 +55,17 @@ const Main = () => {
             </section>
             <section className="why-us">
                 <h2>Why Choose FUNDamentals?</h2>
-                <div className="why-us-card left">
+                <div ref={ref2} className={`why-us-card left ${inView2 ? 'floatUp visible' : ''}`}>
                     <h3>Engaging, Interactive Lessons</h3>
                     <p>Students learn financial skills through immersive gameplay.</p>
                     <p>Content here</p>
                 </div>
-                <div className="why-us-card right">
+                <div ref={ref3} className={`why-us-card right ${inView3 ? 'floatUp visible' : ''}`}>
                     <h3>Built-in Progress Tracking</h3>
                     <p>Monitor student performance with real-time analytics.</p>
                     <p>Content here</p>
                 </div>
-                <div className="why-us-card left">
+                <div ref={ref4} className={`why-us-card left ${inView4 ? 'floatUp visible' : ''}`}>
                     <h3>Designed for Educators and Students</h3>
                     <p>Easy-to-use tools tailored for classroom learning.</p>
                     <p>Content here</p>
