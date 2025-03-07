@@ -4,33 +4,36 @@ const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="container">
-            <nav className={`nav ${menuOpen ? "expanded" : ""}`}>
-                <div className="nav-left">
-                    <a href="#" className="nav-link nav-left-logo">FUNDamentals</a>
-                    <div className="nav-links">
-                        <a href="#" className="nav-link nav-left-link">Demos</a>
-                        <a href="#" className="nav-link nav-left-link">Blog</a>
-                        <a href="#" className="nav-link nav-left-link">Support</a>
-                        <a href="#" className="nav-link nav-left-link">Pricing</a>
+        <div className="container fadeIn">
+            <div className="nav-container">
+                <nav className={`nav ${menuOpen ? "expanded" : ""}`}>
+                    <div className="nav-left">
+                        <a href="#" className="nav-link nav-left-logo">FUNDamentals</a>
+                        <div className="nav-links">
+                            <a href="#" className="nav-link nav-left-link">Demos</a>
+                            <a href="#" className="nav-link nav-left-link">Blog</a>
+                            <a href="#" className="nav-link nav-left-link">Support</a>
+                            <a href="#" className="nav-link nav-left-link">Pricing</a>
+                        </div>
                     </div>
-                </div>
-                <div className="nav-right">
-                    <a href="#" className="nav-link nav-right-link">Teacher Login</a>
-                    <a href="#" className="nav-link nav-right-link sign-up">Sign up</a>
-                    <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                        ☰
-                    </button>
-                    <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-                        <button className="sign-up">Sign Up</button>
-                        <button className="log-in">Teacher Login</button>
-                        <a href="#" className="nav-link">Demos</a>
-                        <a href="#" className="nav-link">Blog</a>
-                        <a href="#" className="nav-link">Support</a>
-                        <a href="#" className="nav-link">Pricing</a>
+                    <div className="nav-right">
+                        <a href="#" className="nav-link nav-right-link">Teacher Login</a>
+                        <a href="#" className="nav-link nav-right-link sign-up">Sign up</a>
+                        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                            ☰
+                        </button>
+                        <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+                            <button className="sign-up">Sign Up</button>
+                            <button className="log-in">Teacher Login</button>
+                            <a href="#" className="nav-link">Demos</a>
+                            <a href="#" className="nav-link">Blog</a>
+                            <a href="#" className="nav-link">Support</a>
+                            <a href="#" className="nav-link">Pricing</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            
             <section className="first-hero-container">
                 <div className="first-hero-content">
                     <h1>Finance Made Fun</h1>
@@ -106,20 +109,23 @@ const Main = () => {
                 <h2>Latest Insights</h2>
                 <p>Read about innovative teaching strategies and financial education trends.</p>
             </section>
-            <footer className="footer">
-                <div className="links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">For Schools</a></li>
-                    </ul>
-                </div>
-                <div className="socials">
-                    <h3>Follow Us</h3>
-                    <p>Join our community of educators.</p>
-                </div>
-            </footer>
+            <div className="footer-container">
+                <footer className="footer">
+                    <div className="links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">For Schools</a></li>
+                        </ul>
+                    </div>
+                    <div className="socials">
+                        <h3>Follow Us</h3>
+                        <p>Join our community of educators.</p>
+                    </div>
+                </footer>
+            </div>
+            
         </div>
     );
 };
