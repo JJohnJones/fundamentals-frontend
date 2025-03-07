@@ -6,15 +6,8 @@ Fundamentals Frontend is the user-facing component of the FUNDamentals platform,
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
 - [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
 
 ## About the Project
 
