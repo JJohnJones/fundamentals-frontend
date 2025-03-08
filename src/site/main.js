@@ -30,10 +30,10 @@ const Main = () => {
                         <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
                             <button className="sign-up">Sign Up</button>
                             <button className="log-in">Teacher Login</button>
-                            <a href="#" className="nav-link">Demos</a>
-                            <a href="#" className="nav-link">Blog</a>
-                            <a href="#" className="nav-link">Support</a>
-                            <a href="#" className="nav-link">Pricing</a>
+                            <a href="#" id="features" className="nav-link">Features</a>
+                            <a href="#" id="support" className="nav-link">Support</a>
+                            <a href="#" id="resources" className="nav-link">Resources</a>
+                            <a href="#" id="pricing" className="nav-link">Pricing</a>
                         </div>
                     </div>
                 </nav>
