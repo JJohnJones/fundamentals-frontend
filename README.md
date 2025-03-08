@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Fundamentals Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fundamentals Frontend is the user-facing component of the FUNDamentals platform, designed to provide an interactive and engaging financial literacy experience. The platform transforms traditional financial education into a gamified, modular learning system that equips educators and students with the tools to navigate real-world financial decisions effectively.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Roadmap](#roadmap)
+- [Contact](#contact)
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The FUNDamentals platform aims to bridge the gap between knowledge and application in financial literacy. By integrating experiential simulations and modular learning, it ensures that financial education is accessible and impactful. The frontend is designed with user experience in mind, making it intuitive for both students and educators.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Built With
 
-### `npm test`
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Roadmap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Planned features and improvements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] User authentication system
+- [ ] Improved brand design and new logo
+- [ ] Teacher dashboard for monitoring student progress
+- [ ] Mobile-responsive design improvements
+- [ ] Improved accessibility features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Project Maintainer: **John Jones**  
+GitHub: [@JJohnJones](https://github.com/JJohnJones)  
+Email: johnjones8323@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Project Repository: [https://github.com/JJohnJones/fundamentals-frontend](https://github.com/JJohnJones/fundamentals-frontend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
